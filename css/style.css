@@ -250,6 +250,34 @@ main header h1{
 
 
 /*
+	Share button started
+*/
+
+.share-container{
+	color: #25D366;
+	padding: 60px 30px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 800;
+	background-color: #EDF5E1;
+}
+
+.share-container p{
+	margin:0;
+}
+
+.share-container p a{
+	color: #25D366;
+	font-size: 80px;
+}
+
+/* Share button ended*/
+
+
+
+
+
+/*
 	***** about page *****
 */
 
@@ -610,6 +638,11 @@ footer{
 	.weeks-blocks div {
 		flex:1 1 40%;
 		margin:10px;
+	}
+
+
+	.share-container{
+		display: none;
 	}
 
 
