@@ -4,9 +4,11 @@
 	<title>Nptel C++ Week-1</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133851805-1"></script>
@@ -18,33 +20,33 @@
   gtag('config', 'UA-133851805-1');
 </script>
 
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-8936898229993055",
-    enable_page_level_ads: true
-  });
-</script>
+	
 </head>
 
 <body>
+
 	<!-- Page header started-->
 	<header class="header">
-		<h1>NPTEL - Programming In C++</h1>
+		<div class="logo">
+			<h1><a href="index.html">C++<span>Solution</span></a></h1>
+			<div><i class="fas fa-bars" id="hamburger"></i></div>
+		</div>
+
+		<!-- Page navigation started-->
+	<nav id="navigation">
+		<a href="index.html" target="_self">Home</a>
+		<a href="blog.html" target="_self">Blog</a>
+		<a href="about.html" target="_self">About</a>
+		<a href="contact.html" target="_self">Contact</a>
+	</nav>
+	<!-- Page navigation ended-->
+
 	</header>
 	<!-- Page header ended-->
 
 
-	<!-- Page navigation started-->
-	<nav>
-		<a href="index.html" target="_self">Home</a>
-		<a href="about.html" target="_self">About</a>
-	</nav>
-	<!-- Page navigation ended-->
-
-
 	<!-- main content started-->
-	<main>
+	<main class="week-container">
 		<header>
 			<h1>WEEK-1</h1>
 		</header>
@@ -57,7 +59,7 @@
 				<div class="question">
 					<div class="question-no">Q1</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q1.JPG?seed=67880&url=assets/img/a1q1.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q1.JPG?seed=67880&url=assets/img/a1q1.JPG" alt="question one">
 					</div>
 				</div>
 
@@ -71,7 +73,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p><code>increment()</code> will be called 5 times and it returns value of variable <code>count</code> which is static ( remember last value at every function call)  to variable<code> j</code></p>
+						<p><code>increment()</code> will be called 5 times and it returns value of variable <code>count</code> which is static ( regardless of how many times you call the function increment() the  variable count remember its last incremented value because it is static variable )  to variable<code> j</code></p>
 					</details>
 				</div>
 			</div><!-- question -1 ended-->
@@ -85,7 +87,7 @@
 				<div class="question">
 					<div class="question-no">Q2</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q2.JPG?seed=74865&url=assets/img/a1q2.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q2.JPG?seed=74865&url=assets/img/a1q2.JPG" alt="question two">
 					</div>
 				</div>
 
@@ -99,7 +101,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p>size of variable <code>s</code> is <code>2 x 8 = 16 bytes</code> ( short type ) and size of <code>struct u </code> is 8 bytes ( union so double type )</p>
+						<p>size of variable <code>s</code> is <code>2 x 8 = 16 bytes</code> ( short type ) and size of <code>struct u </code> is 8 bytes ( union type so largest data type is double which is of 8 bytes )</p>
 					</details>
 				</div>
 			</div><!-- question -2 ended-->
@@ -113,7 +115,7 @@
 				<div class="question">
 					<div class="question-no">Q3</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q3.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q3.JPG" alt="question three">
 					</div>
 				</div>
 
@@ -127,7 +129,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p>Value of variable <code>k</code> is incremented by 1 and address of pointer variable <code>y and z</code> is decremented and incremented by 4 bytes</p>
+						<p>Value of variable <code>k</code> is incremented by 1 and address of pointer variable <code>y is decremented  by 4 bytes (pointing to previous location) and variable z</code>  is incremented by 4 bytes (pointing to next location).</p>
 					</details>
 				</div>
 			</div><!-- question -3 ended-->
@@ -141,7 +143,7 @@
 				<div class="question">
 					<div class="question-no">Q4</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q4.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q4.JPG" alt="question four">
 					</div>
 				</div>
 	
@@ -155,7 +157,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p>There is no array exist of <code>arr[1] </code> and compiler not give an error.</p>
+						<p>There is no array exist of <code>arr[1] </code> because arr[ ] size is only 1. Also compiler not give an error. It will ignore.</p>
 					</details>
 				</div>
 			</div><!-- question - 4 ended-->
@@ -170,7 +172,7 @@
 				<div class="question">
 					<div class="question-no">Q5</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q5.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q5.JPG" alt="question five">
 					</div>
 				</div>
 
@@ -184,7 +186,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p><b>1. </b> Initially array is <code>[1, 2, 3, 4] </code> size is = 4<br><br><b>2. </b> After <code>resize( 3 )</code> array is <code>[1,2,3] </code> size is = 2<br><br><b>3. </b> After <code>resize( 4, 10 )</code> array is <code>[1, 2, 3, 10] </code> size is = 4<br><br><b>4. </b> After <code> resize( 5 )</code> array is <code>[1, 2, 3, 10, 0] </code> size is = 5<br><br></p>
+						<p><b>1. </b> Initially array is <code>[1, 2, 3, 4] </code> size is = 4<br><br><b>2. </b> After <code>resize( 3 )</code> array is <code>[1,2,3] </code> size is = 3<br><br><b>3. </b> After <code>resize( 4, 10 )</code> array is <code>[1, 2, 3, 10] </code> size is = 4<br><br><b>4. </b> After <code> resize( 5 )</code> array is <code>[1, 2, 3, 10, 0] </code> size is = 5<br><br></p>
 					</details>
 				</div>
 			</div><!--question - 5 ended-->
@@ -198,7 +200,7 @@
 				<div class="question">
 					<div class="question-no">Q6</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q6.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q6.JPG" alt="question six">
 					</div>
 				</div>
 
@@ -212,7 +214,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p>At every function call variable <code> i </code>retain its value .</p>
+						<p>At every function call variable <code> i </code>retain ( regardless of how many times you call the function f() the variable i remember its last incremented value because it is static variable ) its value .</p>
 					</details>
 				</div>
 			</div><!-- question -6 ended-->
@@ -227,15 +229,15 @@
 				<div class="question">
 					<div class="question-no">Q7</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q7.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q7.JPG" alt="question seven">
 					</div>
 				</div>
 
 				<div class="question-options">
-					<div><span class="question-options-labels">a)</span>((str1 < str2) ? -1 : ((str1 > str2) ? +1 : 0))<i class="fas fa-check-circle tick"></i></div>
+					<div><span class="question-options-labels">a)</span>((str1 &lt; str2) ? -1 : ((str1 > str2) ? +1 : 0))<i class="fas fa-check-circle tick"></i></div>
 					<div><span class="question-options-labels">b)</span>strcmp(str1, str2)<i class="fas fa-check-circle tick"></i></div>
 					<div><span class="question-options-labels">c)</span>strcmp(str1.c_str(), str2.c_str())</div>
-					<div><span class="question-options-labels">d)</span>((str1 < str2) ? +1 : ((str1 > str2) ? -1 : 0))</div>	
+					<div><span class="question-options-labels">d)</span>((str1 &lt; str2) ? +1 : ((str1 > str2) ? -1 : 0))</div>	
 				</div>
 
 				<div class="question-explain">
@@ -255,15 +257,15 @@
 				<div class="question">
 					<div class="question-no">Q8</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8.JPG" alt="question eight">
 					</div>
 				</div>
 
 				<div class="question-options">
-					<div><span class="question-options-labels">a)</span><img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o1.JPG"></div>
-					<div><span class="question-options-labels">b)</span> <img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o2.JPG"></div>
-					<div><span class="question-options-labels">c)</span> <img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o3.JPG"></div>
-					<div><span class="question-options-labels">d)</span> <img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o4.JPG"><i class="fas fa-check-circle tick"></i></div>	
+					<div><span class="question-options-labels">a)</span><img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o1.JPG" alt="option a"></div>
+					<div><span class="question-options-labels">b)</span> <img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o2.JPG" alt="option b"></div>
+					<div><span class="question-options-labels">c)</span> <img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o3.JPG" alt="option c"></div>
+					<div><span class="question-options-labels">d)</span> <img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q8o4.JPG" alt="option d"><i class="fas fa-check-circle tick"></i></div>	
 				</div>
 
 				<div class="question-explain">
@@ -283,7 +285,8 @@
 				<div class="question">
 					<div class="question-no">Q9</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q9.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q9.JPG" 
+						alt="question nine">
 					</div>
 				</div>
 
@@ -297,7 +300,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p><b>1. </b> Inner <code> printf()</code> first print <code> Hello world and after that it return an integer </code> which is number of characters of <code>Hello world .</code><br><b><br>2. </b> Outer <code> printf() </code> gets <code> 11 </code> as integer and then print <code> 11 </code> as integer ( %d is used ) .</p>
+						<p><b>1. </b> Inner <code> printf()</code> first print <code> Hello world and after that it return an integer </code> which is number of characters of <code> Hello world which is 11 .</code><br><b><br>2. </b> Outer <code> printf() </code> gets <code> 11 </code>(numbers of characters of Hello world) as integer and then print <code> 11 </code> as integer ( %d is used ) .</p>
 					</details>
 				</div>
 			</div><!-- question -9 ended-->
@@ -311,7 +314,8 @@
 				<div class="question">
 					<div class="question-no">Q10</div>
 					<div class="question-img">
-						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q10.JPG">
+						<img src="https://onlinecourses.nptel.ac.in/noc19_cs10/assets/img/a1q10.JPG" 
+						alt="question ten">
 					</div>
 				</div>
 
@@ -325,7 +329,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p>No Expalnation .</p>
+						<p><b> 1. </b> array is <code> [10, 20, 30, 40].</code><br><b> 2. </b>so <code>array[0]</code> will give output 10.<br><b> 3. </b> If you know the pointer than you will understand it quickly.<br><b> 4. </b>variable array has base address of element 10.<br><b> 5. </b> so <code>*array</code> is same as <code>array[0]</code> and will give output 10.<br><b> 6. </b> Now compiler internally  represent <code>array[0]</code> as <code>*(array + 0)</code> which will give output 10.<br><b> 7. </b> so <code>2[array-2]</code> will be internally represent as <code>*(2 + array -2)</code> which will give output 10.<br><b> 8. </b> But our answer is -10.<br><b> 9. </b> At first time I am also confused but saw <code>- (operator)</code> and <code>2[array-2]</code> as seperate things.<br><b> 10. </b>For example in <code>printf("%d", -(a));</code> variable <code>a and -(operator)</code> are seperate expression and  multiplied.<br><b> 11. </b> So <code>-(operator) and value of 2[array-2]</code> which is 10 is multiplied so answer is -10</p>
 					</details>
 				</div>
 			</div><!--question 10 ended-->
@@ -337,6 +341,14 @@
 
 	<!-- page footer started-->
 	<footer>
+		
+		<div class="footer">
+			<a href="blog.html">Blog</a>
+			<a href="about.html">About me</a>
+			<a href="contact.html">Contact me</a>
+			<a href="policy.html">Privacy Policy</a>
+		</div>
+
 		<div>&copy; nptelcppsolution-2019</div>
 	</footer>
 	<!-- page footer ended-->

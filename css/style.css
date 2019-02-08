@@ -13,52 +13,173 @@ body{
 	font-family: "Segoe UI", Helvetica, arial, sans-serif;
 }
 
+
+
+
+
 /*
 	*** page header started****
 */
+
 .header{
-	width: 100%;
-	height:100%;
-	color: #FF8E07;
-	background-color: #F0EDEA;
+	display: flex;
+	flex-flow: column nowrap;
 }
 
-.header h1{
-	margin:0;
-	font-size: 25px;
-	font-weight: 300;
-	text-align: center;
-	padding: 40px 20px;
+
+.logo{
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 1;
+	padding:10px;
+	background-color: black;
 }
+
+.logo h1{
+	flex:1;
+	margin:0;
+	color: #FFF;
+	padding-left: 40px;
+	font-size: 25px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	font-family: 'Kaushan Script';
+	animation:slideLogo 1s;
+}
+
+.logo h1 a{
+	color:#FFF;
+	text-decoration: none;
+}
+
+.logo h1 span{
+	color:#F64C72;
+}
+
+.logo div{
+	flex: 1;
+	font-size: 25px;
+	text-align: right;
+}
+
+.logo div i{
+	color: #FFF;
+	padding:8px 15px;
+	border-radius: 5px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.logo div i:hover{
+	color: #F64C72;
+	background-color: #FFF;
+}
+
+@keyframes slideLogo{
+	0%{
+		margin-left: -100px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+
+}
+
 /* page header ended*/
+
+
+
+
 
 
 /*
 	*** page navigation started ***
 */
+
 nav{
-	display: flex;
-	flex-flow: row nowrap;
+	display: none;
+	flex-flow: column nowrap;
+	flex: 1;
+	user-select: none;
 }
 
 nav a{
-	flex: 1;
-	color:white;
-	padding: 15px;
+	color:#FFF;
+	padding: 8px;
 	font-size: 20px;
 	text-align: center;
-	font-weight: lighter;
-	transition: all 0.6s;
+	font-weight: 500;
+	transition: all 0.2s;
 	text-decoration: none;
-	background-color: #FF8E07;
+	background-color: black;
+}
+
+.current-page{
+	background-color: #F64C72;
 }
 
 nav a:hover{
-	color: #FF8E07;
-	background-color: white;
+	color: #FFF;
+	background-color: #F64C72;
 	box-shadow: 2px 2px 15px 0 rgba(0,0,0,0.3);
 }
 /* page navigation ended */
+
+
+
+
+
+
+/*
+	banner started 
+*/
+
+.banner{
+	position: relative;
+	min-height:250px;
+	overflow: hidden;
+	background-image: url("img/1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(149,7,64,0.7);
+}
+
+.banner-content{
+	position: absolute;
+	margin:60px 0 0 30px;
+}
+.banner-content p{
+	color: #FFF;
+	margin:0;
+	font-size: 30px;
+	padding: 0px 20px 0;
+	font-weight: 800;
+	font-family: 'Open Sans';
+}
+
+.banner-content p.banner-para{
+	max-width: 700px;
+	margin-top: 20px;
+	font-size: 12px; 
+	font-weight: 400;
+	text-align: justify;
+	letter-spacing: 4px;
+	word-spacing: 15px;
+	font-family: 'Open Sans';
+}
+
+/* banner ended*/
+
+
+
 
 
 
@@ -67,17 +188,28 @@ nav a:hover{
 */
 main{
 	width:100%;
+	background-color: #1A1A1D;
+}
+
+main header{
 }
 
 main header h1{
-	color: #FF8E07;
+	margin:0;
+	color: #E3E2DF;
 	font-size: 20px;
 	font-weight: 900;
+	padding: 40px 10px;
 	text-align: center;
 }
 
+
+
+
+
+
 /*
-	==== weeks blocks stared ====
+	==== Home page weeks blocks stared ====
 */
 
 .weeks-blocks{
@@ -89,7 +221,6 @@ main header h1{
 .weeks-blocks div{
 	margin:20px;
 	border-radius: 5px;
-	box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.4);
 }
 
 .weeks-blocks div a{
@@ -102,27 +233,33 @@ main header h1{
 	font-weight: lighter;
 	display: inline-block;
 	text-decoration: none;
-	transition: transform 0.6s;
-	background-image: linear-gradient(to right top, #c959e7, #ff47b2, #ff617a, #ff9149, #ffbf2f);
+	transition: transform 0.2s;
+	background-color: #0677A1;
 }
 
 .weeks-blocks div a:hover{
 	transform:scale(1.04,1.04);
-	box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 3px 0px rgba(255,255,255,0.4),5px 5px 18px 0px rgba(255,255,255,0.4);
 }
 /* weeks blocks ended*/
+
+
+
+
 
 
 
 /*
 	***** about page *****
 */
+
+
 .about{
 	padding: 10px 30px;
 }
 
 .about p{
-	color:black;
+	color:#FFF;
 	text-align: justify;
 	font-size: 20px;
 	font-weight: 300;
@@ -140,19 +277,155 @@ main header h1{
 
 
 
+
+
+
+
+/*
+	contact me started
+*/
+.contact-container{
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap; 
+	justify-content: center;
+	background-color: #FFF;
+}
+
+.contact-container div p{
+	color: #FE7700;
+	align-content: center;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.contact-container div p:nth-child(1){
+
+	font-size: 60px;
+	font-weight: 800;
+	font-family: 'Open Sans';
+}
+
+.contact-container div p:nth-child(2){
+	user-select: all;
+}
+
+/* contact me ended
+*/
+
+
+
+
+
+
+/*
+		Blog started
+*/
+
+.blog-container{
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap; 
+	justify-content: center;
+	background-color: #FFF;
+}
+
+.blog-container header h1{
+	color: black;
+}
+
+.blog-container div p{
+	color: #003EFE;
+	align-content: center;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.blog-container div p:nth-child(1){
+
+	font-size: 60px;
+	font-weight: 800;
+	font-family: 'Open Sans';
+}
+
+.blog-container div p:nth-child(2){
+	user-select: all;
+}
+
+
+/* blog ended */
+
+
+
+
+
+
+/*
+		Privacy Policy started
+*/
+.ppolicy-container{
+	background-color: #FFF;
+	padding: 30px;
+	text-align: center;
+}
+
+.ppolicy-container h1{
+	color: #A500FE;
+}
+
+.ppolicy-container h2{
+	color: #A500FE;
+}
+
+.ppolicy-container p a{
+	color: #FE7700;
+	text-decoration: none;
+}
+
+.ppolicy-container p a:hover{
+	text-decoration: underline;
+}
+
+/*	Privacy Policy ended
+*/
+
+
+
+
+
+
+
 /*
 	****** week -1 page started ******
 */
 
+.week-container{
+	background-color: #EDF5E1;
+}
+
+.week-container header h1{
+	font-size: 30px;
+	color:#D79922;
+}
+
+
 .week{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
 	padding: 20px;
 }
 
 .question-container{
 	padding: 20px;
+	background-color: #FFF;
 	border-radius: 5px;
 	margin-bottom: 40px;
-	box-shadow: 3px 3px 20px 0 rgba(255, 120, 0, 0.7);
+	box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.3);
 }
 
 .question{
@@ -161,7 +434,6 @@ main header h1{
 }
 
 .question-no{
-	color: #FF8E07;
 	font-weight: 900;
 	padding-right: 20px;
 	text-decoration: underline;
@@ -169,7 +441,7 @@ main header h1{
 
 .question-img{
 	border-radius: 5px;
-	box-shadow: 3px 3px 20px 0 rgba(255, 120, 0, 0.7);
+	box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.3);
 }
 
 .question-img img{
@@ -182,13 +454,12 @@ main header h1{
 }
 
 .question-options div{
-	padding:10px 0; 
+	padding:10px 0;
 }
 
 .question-options-labels{
 	padding: 0 10px;
 	font-weight: 900;
-	color:#FF8E07;
 }
 
 .tick{
@@ -204,13 +475,13 @@ summary{
 	padding: 8px;
 	outline: 0;
 	cursor:pointer;
-	background-color: #FF8E07;
+	background-color: #D79922;
 	user-select: none;
 	transition: all 0.5s;
 }
 
 summary:hover{
-	color: #FF8E07;
+	color: #D79922;
 	background-color: white;
 	box-shadow: 2px 2px 15px 0 rgba(0,0,0,0.3);
 }
@@ -220,7 +491,7 @@ details summary::-webkit-details-marker{
 }
 
 details[open]{
-	outline: 1px solid #FF8E07;
+	outline: 1px solid #D79922;
 }
 
 details p{
@@ -232,8 +503,9 @@ details p{
 /*
 	======== coming soon ============
 */
-.com-soon{
-	color:#FF8E07;
+.coming-soon{
+	text-align: center;
+	color:#D79922;
 	font-size: 50px;
 	font-weight: 900;
 	padding: 50px;
@@ -247,13 +519,42 @@ details p{
 	===== page footer started =====
 */
 footer{
-	color:#FF8E07;
-	background-color:#F0EDEA;
-	font-size: 20px;
-	padding: 30px;
+	background-color: black;
+	padding: 30px 20px;
+}
+
+.footer {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.footer a{
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-size: 13px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: #950740;
+}
+
+.footer + div{
+	color:white;
+	font-size: 13px;
 	text-align: center;
 }
+
 /* page footer ended*/
+
+
+
+
+
+
+
 
 
 
@@ -263,8 +564,38 @@ footer{
 */
 @media screen and (min-width:768px){
 
-	.header h1{
-		font-size: 50px
+	.header{
+	flex-flow: row nowrap;
+	}
+
+	.logo div{
+		display: none;
+	}
+
+	nav{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	nav a{
+		flex: 1;
+		/*border-bottom: none;*/
+	}
+
+	.banner{
+		min-height: 450px;
+	}
+
+	.banner-content p{
+		font-size: 90px;
+	}
+
+.banner-content p.banner-para{
+	font-size: 20px;
+	}
+
+	main{
+		padding: 0px 0 60px;
 	}
 
 	main header h1{
@@ -274,12 +605,18 @@ footer{
 	.weeks-blocks{
 	flex-flow: row wrap;
 	padding: 0 10px;
-}
+	}
 
 	.weeks-blocks div {
 		flex:1 1 40%;
 		margin:10px;
-}
+	}
+
+
+	.week-container header h1{
+		font-size: 80px;
+	}
+
 	.question-container{
 		display: flex;
 		flex-flow: row wrap;
@@ -307,7 +644,36 @@ footer{
 		font-size: 25px;
 	}
 
+	.contact-container div p:nth-child(1){
+	font-size: 100px;
+	}
+
+	.contact-container div p:nth-child(2){
+		font-size: 30px;
+	}
+
+
+	.blog-container div p:nth-child(1){
+	font-size: 100px;
+	}
+
+	.blog-container div p:nth-child(2){
+		font-size: 30px;
+	}
+
+
+	footer{
+		padding: 40px 0;
+	}
+
+	.footer {
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+
 }
+
+
 
 @media screen and (min-width:992px){
 	.question-container{
