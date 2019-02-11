@@ -246,6 +246,35 @@ main header h1{
 
 
 
+/*
+	Facebook page started
+*/
+
+.facebook-container{
+	color: #3B5998;
+	padding: 50px 25px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 800;
+	background-color: #EDF5E1;
+}
+
+.facebook-container p{
+	margin:0;
+}
+
+.facebook-container p a{
+	color: #3B5998;
+	font-size: 40px;
+}
+
+.facebook-desktop{
+	display: none;
+}
+
+/* Facebook page ended*/
+
+
 
 
 
@@ -255,9 +284,9 @@ main header h1{
 
 .share-container{
 	color: #25D366;
-	padding: 60px 30px;
+	padding: 40px 20px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 800;
 	background-color: #EDF5E1;
 }
@@ -268,7 +297,7 @@ main header h1{
 
 .share-container p a{
 	color: #25D366;
-	font-size: 80px;
+	font-size: 50px;
 }
 
 /* Share button ended*/
@@ -618,8 +647,8 @@ footer{
 		font-size: 90px;
 	}
 
-.banner-content p.banner-para{
-	font-size: 20px;
+	.banner-content p.banner-para{
+		font-size: 20px;
 	}
 
 	main{
@@ -631,8 +660,8 @@ footer{
 	}
 	
 	.weeks-blocks{
-	flex-flow: row wrap;
-	padding: 0 10px;
+		flex-flow: row wrap;
+		padding: 0 10px;
 	}
 
 	.weeks-blocks div {
@@ -640,6 +669,20 @@ footer{
 		margin:10px;
 	}
 
+	.facebook-container{
+		font-size: 50px;
+	}
+
+	.facebook-container p a{
+		font-size: 70px;
+	}
+
+	.facebook-desktop{
+		display: block;
+	}
+	.facebook-mobile{
+		display: none;
+	}
 
 	.share-container{
 		display: none;
@@ -682,7 +725,7 @@ footer{
 	}
 
 	.contact-container div p:nth-child(2){
-		font-size: 30px;
+		font-siz2e: 30px;
 	}
 
 
