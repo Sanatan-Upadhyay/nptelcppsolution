@@ -10,14 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/script.js"></script>
 
-	<!-- Google adsense-->
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-9667686705630743",
-    enable_page_level_ads: true
-  });
-</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133851805-1"></script>
@@ -111,7 +103,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p><b>1. </b>Any parameter after default parameter should be default parameter otherwise it give compile time error.<br><b>2. </b> In function double Add(double X, double Y = 0, double Z) 3rd parameter is not default. </p>
+						<p><b>1. </b>Any parameter after default parameter should be default parameter otherwise it give compile time error.<br><b>2. </b> In function double Add(double X, double Y = 0, double Z) 3rd parameter is not default parameter. </p>
 					</details>
 				</div>
 			</div><!-- question -2 ended-->
@@ -139,7 +131,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p></p>
+						<p><b>1. </b>function func(int& a) is a return by reference function.<br><b>2. </b> Variable i is local variable inside func(int& a) which is very risky inside Return by Reference function.<br><b>3. </b>So variable i dies afer func(int& a). <br><b>3. </b>So refernce variable b recieve a address to garbage value. <br><b>4. </b>Then b + a have indetreminate value</p>
 					</details>
 				</div>
 			</div><!-- question -3 ended-->
@@ -166,7 +158,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p></p>
+						<p>: : , sizeof and ? : operators cannot be overloaded so option a and d is wrong. Option b and c operators can be overloaded happily so correct option.</p>
 					</details>
 				</div>
 			</div><!-- question - 4 ended-->
@@ -195,7 +187,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p></p>
+						<p><b>1. </b> MM_1(MM_1(a + 1, b - 1), a + b) first<br> resolve to MM_1(3 + 1 * 4 - 1, 3 + 4) then<br> it resolve to 3 + 1 * 4 - 1 * 3 + 4 which is equal to 8.<br><br><b>2. </b>MM_2(MM_2(a + 1, b - 1), a + b) first<br> resolve to MM_2((3 + 1 * 4 - 1), 3 + 4) then<br> it resolve to ((3 + 1 * 4 - 1) * 3 + 4) which is equal to 22.<br><br><b>3. </b>MM_3(MM_3(a + 1, b - 1), a + b) first<br> resolve to MM_3((3 + 1) * (4 - 1)), 3 + 4) then<br> it resolve to ((3 + 1) * (4 - 1)) * (3 + 4) which is equal to 84.<br><br><b>4. </b>MPLY(MPLY(a + 1, b - 1), a + b) first<br> resolve to MPLY(12, a + b) then<br> it resolve to MPLY( 12, 7) which is equal to 84.</p>
 					</details>
 				</div>
 			</div><!--question - 5 ended-->
@@ -223,7 +215,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p></p>
+						<p><b>1. </b> Function Add(a, b) will exact match to function Add(int a, int b).<br><b>2. </b> For function Add(a, 20.2) compiler first match to Add(int a, int b) because 1st parameter exactly match and 2nd parameter can be converted to int to match.<br><b>3. </b> Now for function Add(a, 20.2) compiler then match to Add(double a, double b) because 1st parameter can be converted to double to match and 2nd parameter exactly match.<br><b>4. </b> So compiler confused and give ambigious error.</p>
 					</details>
 				</div>
 			</div><!-- question -6 ended-->
@@ -252,7 +244,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p>No Explanation .</p>
+						<p> See answer then try to understand. So no explanation.</p>
 					</details>
 				</div>
 			</div><!-- question -7 ended-->
@@ -280,7 +272,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p></p>
+						<p><b>1. </b> *p points to character 'A' then output is A.<br><b>2. </b> After p is deleted.<br><b>3. </b> Now p points to nothing and deleted so no error.</p>
 					</details>
 				</div>
 			</div><!-- question - 8 ended-->
@@ -308,7 +300,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p></p>
+						<p>Option b) have right syntax. See Module 9 Lecture video slide no. 12.</p>
 					</details>
 				</div>
 			</div><!-- question -9 ended-->
@@ -336,7 +328,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explaination</summary>
-						<p></p>
+						<p>Option a) have right syntax. See Module 10 Lecture video slide no. 13.</p>
 					</details>
 				</div>
 			</div><!--question 10 ended-->
