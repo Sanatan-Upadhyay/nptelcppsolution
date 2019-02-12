@@ -252,11 +252,12 @@ main header h1{
 
 .facebook-container{
 	color: #3B5998;
-	padding: 50px 25px;
+	padding: 80px 10px 20px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 800;
 	background-color: #EDF5E1;
+	font-family: 'Open Sans';
 }
 
 .facebook-container p{
@@ -265,7 +266,7 @@ main header h1{
 
 .facebook-container p a{
 	color: #3B5998;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .facebook-desktop{
@@ -284,11 +285,12 @@ main header h1{
 
 .share-container{
 	color: #25D366;
-	padding: 40px 20px;
+	padding: 0px 20px 80px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 800;
 	background-color: #EDF5E1;
+	font-family: 'Open Sans';
 }
 
 .share-container p{
@@ -297,10 +299,49 @@ main header h1{
 
 .share-container p a{
 	color: #25D366;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 /* Share button ended*/
+
+
+
+
+
+/*Subscribe started*/
+
+.subscribe-container{
+	color:#FFF;
+	padding: 100px 10px;
+	background-color: #FF5500;
+	text-align: center;
+	font-weight: 800;
+	font-family: 'Open Sans';
+}
+
+.subscribe-container div{
+	font-size: 20px;
+}
+
+.subscribe-container div:nth-child(1){
+	margin-bottom: 40px;
+}
+
+.subscribe-container div a{
+	color: #FFF;
+	padding: 10px 40px;
+	text-decoration: none;
+	border-radius: 40px;
+	border:4px solid #FFF;
+	transition: all 0.4s;
+}
+
+.subscribe-container div a:hover{
+	color: #FF5500;
+	background-color: #FFF;
+}
+
+/*Subscribe ended*/
 
 
 
@@ -641,6 +682,7 @@ footer{
 
 	.banner{
 		min-height: 450px;
+		background-image: url("img/2.jpg");
 	}
 
 	.banner-content p{
@@ -670,11 +712,12 @@ footer{
 	}
 
 	.facebook-container{
-		font-size: 50px;
+		font-size: 30px;
+		padding: 150px 10px;
 	}
 
 	.facebook-container p a{
-		font-size: 70px;
+		font-size: 50px;
 	}
 
 	.facebook-desktop{
@@ -688,6 +731,9 @@ footer{
 		display: none;
 	}
 
+	.subscribe-container div{
+		font-size: 30px;
+	}
 
 	.week-container header h1{
 		font-size: 80px;
