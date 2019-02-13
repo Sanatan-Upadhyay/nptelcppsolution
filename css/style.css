@@ -313,7 +313,7 @@ main header h1{
 .subscribe-container{
 	color:#FFF;
 	padding: 100px 10px;
-	background-color: #FF5500;
+	background-color:#5D001E;
 	text-align: center;
 	font-weight: 800;
 	font-family: 'Open Sans';
@@ -337,7 +337,7 @@ main header h1{
 }
 
 .subscribe-container div a:hover{
-	color: #FF5500;
+	color: #5D001E;
 	background-color: #FFF;
 }
 
