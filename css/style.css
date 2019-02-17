@@ -328,6 +328,7 @@ main header h1{
 }
 
 .subscribe-container div a{
+	display: inline-block;
 	color: #FFF;
 	padding: 10px 40px;
 	text-decoration: none;
@@ -596,6 +597,61 @@ details p{
 	padding: 10px 20px 20px 20px;
 }
 /*week -1 page ended*/
+
+
+
+
+
+/*
+		ridirect page page started
+*/
+
+.redirect-container{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Open Sans';
+	font-weight: 800;
+	text-align: center;
+	border: 1px solid #F64C72;
+	border-radius: 5px;
+	padding: 100px 20px;
+}
+
+.redirect-text{
+	color: #F64C72;
+	font-size: 20px;
+	margin-bottom: 20px;
+	/*border:2px solid green;*/
+}
+
+.redirect-link{
+	/*border:2px solid red;*/
+
+}
+
+
+.redirect-link a{
+	display: inline-block;
+	color: #FFF;
+	padding: 20px 40px;
+	font-size: 20px;
+	border-radius: 40px;
+	text-decoration: none;
+	background-color: #F64C72;
+	border: 2px solid #F64C72;
+	transition: all 0.4s;
+}
+
+.redirect-link a:hover{
+	color: #F64C72;
+	background-color: #FFF;
+}
+
+/* redirect page ended*/
+
+
 
 
 /*
