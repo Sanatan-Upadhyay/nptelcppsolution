@@ -166,13 +166,12 @@ nav a:hover{
 }
 
 .banner-content p.banner-para{
-	max-width: 700px;
 	margin-top: 20px;
 	font-size: 12px; 
 	font-weight: 400;
 	text-align: justify;
-	letter-spacing: 4px;
-	word-spacing: 15px;
+	letter-spacing: 3px;
+	word-spacing: 6px;
 	font-family: 'Open Sans';
 }
 
