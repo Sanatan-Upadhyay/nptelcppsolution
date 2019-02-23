@@ -556,8 +556,20 @@ main header h1{
 }
 
 .question-options-labels{
+	width: 40px;
+	display: inline-block;
 	padding: 0 10px;
 	font-weight: 900;
+}
+
+.question-options-text{
+	width: 80%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.question-options-labels-space{
+	padding-left:43px;
 }
 
 .tick{
@@ -622,12 +634,9 @@ details p{
 	color: #F64C72;
 	font-size: 20px;
 	margin-bottom: 20px;
-	/*border:2px solid green;*/
 }
 
 .redirect-link{
-	/*border:2px solid red;*/
-
 }
 
 
@@ -810,6 +819,10 @@ footer{
 	.question-options{
 		flex: 1 1 100%;
 		font-size: 25px;
+	}
+
+	.question-options-text{
+		width: 90%;
 	}
 
 	.question-explain{
