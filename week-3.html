@@ -75,7 +75,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p>Initialization is dynamic inside constructor so pointer variable will be used.</p>
 					</details>
 				</div>
 			</div><!-- question -1 ended-->
@@ -118,7 +118,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p>Default parameters are provided for constructor. So object can be initialized without passing any arguments</p>
 					</details>
 				</div>
 			</div><!-- question -2 ended-->
@@ -146,7 +146,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p><b>1. </b> Inside <b>main()</b>, in cout <b>fun()</b> will be called.<br><br><b>2. </b>Inside <b>fun()</b> <b>i</b> becomes <b>3</b> and an object is created. <b>fun()</b> will return post-increment value of <b>i</b>.<br><br><b>3. </b>When the object <b>obj</b> gets out of scope, a destructor is called and <b>i</b> becomes <b>10</b>.<br><br><b>4. </b>Now, control come back to <b>main()</b> and gives output <b>3</b> and <b>10</b>.<br><br><b>5. </b> When you dry run ( with pen and paper) you will get output <b>3 10</b>. But when you compile this program in codeblocks you will get output <b>3 0</b>. If you print the value of i in next line you will get <b>3 10</b>. <a href="https://en.wikipedia.org/wiki/Sequence_point"> Read about sequencing</a></p>
 					</details>
 				</div>
 			</div><!-- question -3 ended-->
@@ -173,7 +173,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p><b>1. </b> In class A,<br><br> <b>a) </b> Variable <b>a</b> is auto type which means every object will have seperate copy of variable <b>a</b>.<br><b>b) </b> Variable <b>b</b> is static type which means a single copy of variable <b>b</b> will be shared by all the object.<br><b>c) </b>A default constructor<br><br><b>2. </b>Variable <b>b</b> is initialized outside the class to <b>0</b>.<br><br><b>3. </b> In <b>main()</b> three object are created. first is object <b>x</b>. Second is at position <b>a[0]</b>. Third is at position <b>a[1]</b>.<br><br><b>4. </b> For all three object variable a have different copy, 3 different memory allocation for variable <b>a</b>. Its means that all object have their own variable <b>a</b> and they can't see each other.<br><br><b>5. </b> For all three object variable <b>b</b> have same copy, single memory allocation for variable <b>b</b>. Its means that all object have access to same variable <b>b</b>. If any changes made to the value of variable <b>b</b> then all three object will see this new value.<br><br><b>6. </b> Object <b>x</b> calls the constructor. object <b>x</b> have variable <b>a = 0</b> and variable <b>n = 0</b>. Inside constructor body variable <b>n</b> is incremented to <b>n = 1</b> and after simple computation output is <b>a = 1 n = 1</b> .<br><br><b>7. </b> Object at <b>a[0]</b> calls the constructor and have variable <b>a = 0</b> ( its own variable <b>a</b> initializes to <b>0</b> )   and variable <b>n = 1</b> ( static variable other object have same variable <b>b</b> ) . Inside constructor body <b>n</b> is incremented to <b>n = 2</b> and after simple computation output is <b>a = 0 n = 2</b> .<br><br><b>8. </b> Object at <b>a[1]</b> calls the constructor and have variable <b>a = 0</b> ( its own variable <b>a</b> initializes to <b>0</b> )   and variable <b>n = 2</b> ( static variable other object have same variable <b>b</b> ) . Inside constructor body variable <b>n</b> is incremented to <b>n = 3</b> and after simple computation output is <b>a = 3 n = 3</b> .</p>
 					</details>
 				</div>
 			</div><!-- question - 4 ended-->
@@ -202,7 +202,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p>Object <b>k</b> is created and constructor is called and after that destructor is called. Don't be confused with change in position of constructor and destructor inside class <b>abc</b>.</p>
 					</details>
 				</div>
 			</div><!--question - 5 ended-->
@@ -230,7 +230,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p>This is also the way ( like <b>struct</b> ) we can create object. Object <b>p</b> is created which is global. You know global object is first executed before <b>main()</b>. Object constructor is called and then <b>main()</b> is called.</p>
 					</details>
 				</div>
 			</div><!-- question -6 ended-->
@@ -259,7 +259,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p><b>1. </b> Object <b>s2</b> is not created . It will be created if it was written as student <b>s2;</b><br><br><b>2. </b>object <b>s1</b>, <b>s3</b> and <b>s4</b> constructor called.<br><br><b>3. </b>Destructor of <b>s4</b>, <b>s3</b> and <b>s1</b> is called.<br><br><b>5. </b> Answer is <b>200 300 200</b> but Nptel answer is <b>300 300 200</b> ( god knows why)</p>
 					</details>
 				</div>
 			</div><!-- question -7 ended-->
@@ -299,7 +299,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p><b>1. </b> *p points to character 'A' then output is A.<br><b>2. </b> After p is deleted.<br><b>3. </b> Now p points to nothing and deleted so no error.</p>
+						<p>No Explanation</p>
 					</details>
 				</div>
 			</div><!-- question - 8 ended-->
@@ -326,7 +326,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p>In class member function formal parameter get higher priority than data member of the class</p>
 					</details>
 				</div>
 			</div><!-- question -9 ended-->
@@ -366,7 +366,7 @@
 				<div class="question-explain">
 					<details>
 						<summary>Explanation</summary>
-						<p></p>
+						<p>No Explanation</p>
 					</details>
 				</div>
 			</div><!--question 10 ended-->
