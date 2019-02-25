@@ -546,7 +546,6 @@ main header h1{
 	width:100%;
 }
 
-
 .question-options{
 	padding:20px 0; 
 }
@@ -873,6 +872,15 @@ footer{
 
 	.question{
 		flex: 1 1 40%;
+	}
+
+	.question-img img{
+		transition: transform 0.6s;
+	}
+
+	.question-img img:hover{
+		transform: translate(50%,50%) scale(1.8,1.8);
+		box-shadow: 2px 2px 15px 0 rgba(0,0,0,0.3);
 	}
 
 	.question-no{
