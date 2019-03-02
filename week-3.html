@@ -7,7 +7,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/prism.js"></script>
 	<script src="js/script.js"></script>
 
 
@@ -371,6 +373,233 @@
 				</div>
 			</div><!--question 10 ended-->
 
+
+
+			<!-- Programming assignment started -->
+			<div class="programming-container">
+				<p>Programming Assignment</p>
+
+				<!-- Programming question 1 -->
+				<div class="programming-question">
+
+					<!-- Question 1 -->
+					<div class="programming-question-text">
+						<p><span class="question-options-labels">Q1</span> <span class="question-options-text">Fill in the blank to construct the objects t1, t2, t3 and t4 which should use the required constructor So that, while calling print() using the created objects, it would generate the output as per the given test cases.</span></p>
+					</div>
+					<!-- question 1 ended -->
+
+					<div class="programming-testcase"><!-- Test case for question 1 -->
+
+						<div><b>Test Case 1</b><br><br><b>Input</b><br>English<br>Maths<br><br><b>Output</b><br>Computer 0<br>English 0<br>History 50<br>Maths 49</div>
+
+						<div><b>Test Case 2</b><br><br><b>Input</b><br>Algorithm<br>Compiler<br><br><b>Output</b><br>Computer 0<br>Algorithm 0<br>History 50<br>Compiler 49</div>
+
+						<div><b>Test Case 3</b><br><br><b>Input</b><br>Physics<br>Chemistry<br><br><b>Output</b><br>Computer 0<br>Physics 0<br>History 50<br>Chemistry 49</div>
+
+					</div><!-- Test case for question 1  ended-->
+
+
+					<div class="programming-code"><!-- code for question 1-->
+						<pre>
+							<code class="language-cpp">
+#include &lt;string>
+#include &lt;iostream>
+using namespace std;
+
+class Test {
+    string paper;
+    int marks;
+public:
+    Test(): paper("Computer"), marks(0)      // Constructor 1
+    { }
+
+    Test(string p): paper(p), marks(0)       // Constructor 2
+    { }
+
+    Test(int m): paper("History"), marks(m)  // Constructor 3
+    { }
+
+    Test(string p, int m): paper(p), marks(m) // Constructor 4
+    { }
+
+    void Print() {
+        cout << paper << " " << marks << endl;
+    }
+}; // End of Class definition 
+
+
+int main() {
+
+    string subject1, subject2;
+
+    cin>> subject1 >> subject2;
+    __________ // L1 using Constructor 1
+
+    __________ // L2 using Constructor 2
+
+    __________ // L3 using Constructor 3
+
+   	__________ // L4 using Constructor 4
+
+    t1.Print();
+    t2.Print();
+    t3.Print();
+    t4.Print();
+
+    return 0;
+} // End main
+							</code>
+						</pre>
+					</div><!-- code for question 1-->
+					
+					<div class="question-explain">
+						<details>
+							<summary>Answer</summary>
+							<p><b>Test t1;</b> // L1<br><br><b>Test t2( subject1 );</b> // L2 <br><br><b>Test t3( 50 );</b> // L3 <br><br><b>Test t4( subject, 49 );</b> // L4</p>
+						</details>
+					</div>
+
+				</div><!-- Programming question 1 ended -->
+
+
+
+
+
+				<!-- Programming question 2 -->
+				<div class="programming-question">
+
+					<!-- Question 2 -->
+					<div class="programming-question-text">
+						<p><span class="question-options-labels">Q2</span> <span class="question-options-text">Fill In the blank with proper constructor to get the Output as per the  given Test cases.</span></p>
+					</div>
+					<!-- question 2 ended -->
+
+					<div class="programming-testcase"><!-- Test case for question 2 -->
+
+						<div><b>Test Case</b><br><br>Test Case 1<br>Test Case 2<br>Test Case 3<br>Test Case 4</div>
+
+						<div><b>Input</b><br><br>15<br>40<br>35<br>50</div>
+
+						<div><b>Output</b><br><br>15<br>40<br>35<br>50</div>
+
+					</div><!-- Test case for question 2  ended-->
+
+
+					<div class="programming-code"><!-- code for question 2-->
+						<pre>
+							<code class="language-cpp">
+#include &lt;iostream>
+using namespace std;
+
+class A {
+
+    const int id;
+public:
+
+    ____________ // Constructor
+
+void display() { cout << id; }
+
+}; // End of the class
+
+int main() {
+
+    int val;
+    cin>> val;
+    A ob(val);
+
+    ob.display();
+
+    return 0;
+}
+							</code>
+						</pre>
+					</div><!-- code for question 2-->
+					
+					<div class="question-explain">
+						<details>
+							<summary>Answer</summary>
+							<p><b>A ( int b ) : id ( b ) { }</b> // Constructor</p>
+						</details>
+					</div>
+
+				</div><!-- Programming question 2 ended -->
+
+
+
+
+				<!-- Programming question 3 -->
+				<div class="programming-question">
+
+					<!-- Question 3 -->
+					<div class="programming-question-text">
+						<p><span class="question-options-labels">Q3</span> <span class="question-options-text">Fill in the blanks as instructed to declare and define appropriate objects so that the program generates the output as per the given the test cases.</span></p>
+					</div>
+					<!-- question 3 ended -->
+
+					<div class="programming-testcase"><!-- Test case for question 3 -->
+
+						<div><b>Test Case</b><br><br>Test Case 1<br>Test Case 2<br>Test Case 3<br>Test Case 4</div>
+
+						<div><b>Input</b><br><br>25<br>16<br>35<br>45</div>
+
+						<div><b>Output</b><br><br>0 25 25<br>0 16 16<br>0 35 35<br>0 45 45</div>
+
+					</div><!-- Test case for question 3 ended-->
+
+
+					<div class="programming-code"><!-- code for question 3-->
+						<pre>
+							<code class="language-cpp">
+#include&lt;iostream> 
+using namespace std;
+
+class sample { 
+
+    int x;
+public:
+    sample(): x(0) { }
+
+    sample(int x): x(x) { }
+    sample(const sample &obj): x(obj.x) { }
+
+    void Display() { cout << x << " "; }
+};
+
+int main() {
+
+    int val;
+    cin >> val ;
+    
+    __________ // Default Constructor
+
+    __________ // Non-default Constructor
+    
+    __________ // Copy Constructor
+
+    objA.Display();
+
+    objB.Display();
+
+    objC.Display();
+
+    return 0;
+
+}  // End main
+							</code>
+						</pre>
+					</div><!-- code for question 3-->
+					
+					<div class="question-explain">
+						<details>
+							<summary>Answer</summary>
+							<p><b>sample objA ;</b> // Default Constructor<br><br><b>sample objB ( val ) ;</b> // Non-default Constructor<br><br><b>sample objC ( objB ) ;</b> // Copy Constructor</p>
+						</details>
+					</div>
+
+				</div><!-- Programming question 3 ended -->
+
+			</div><!-- Programming assignment section ended -->
 		</section>
 	</main>
 	<!-- main content ended-->
