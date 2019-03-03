@@ -528,37 +528,69 @@ public: int b;
     __________ //LINE 1
 
     base(int x, int y): a(x), b(y) { }
+
     ~base() { }
-    void callme(int i, int j) { a = i; b = j; cout << a << b; }
+
+    void callme(int i, int j) {
+     	a = i;
+     	b = j;
+     	cout << a << b;
+ 	}
 };
 
-class derived : public base { protected: int c;
+class derived : public base { 
+protected: int c;
 public: int d;
 
     __________ //LINE 2
 
-    derived(int x, int y): c(x), d(y) { a = b = 0; }
+    derived(int x, int y): c(x), d(y) { 
+    	a = b = 0; 
+	}
+
     ~derived() { }
-    void callme() { cout << endl << a << endl << b; }
+
+    void callme() { 
+    	cout << endl << a << endl << b; 
+	}
 };
 
-class dderived :public derived { protected: int e;
+class dderived :public derived {
+protected: int e;
 public: int f;
 
     __________ //LINE 3
 
-    dderived(int x, int y): e(x), f(y) { a = b = c = d = 0; }
+    dderived(int x, int y): e(x), f(y) {
+    	a = b = c = d = 0;
+	}
+
     ~dderived() { }
-    void callme() { cout << endl << a << endl << b << endl << c << endl << d; }
+
+    void callme() { 
+    	cout << endl << a << endl << b << endl << c << endl << d;
+    }
 };
 
-class ddderived : protected dderived { private: int g, sum;
+class ddderived : protected dderived {
+private: int g, sum;
 public: int h;
+
     ddderived(int x, int y): g(x), h(y) {
-        a = 3 * g; b = 3 * h; c = 3 * a; d = 3 * b; e = 3 * c; f = 3 * d;
+        a = 3 * g;
+        b = 3 * h;
+        c = 3 * a; 
+        d = 3 * b;
+        e = 3 * c;
+        f = 3 * d;
     }
+
     ~ddderived() { }
-    void callme() { sum = a + b + b + c + d + e + f; cout << sum; }
+
+    void callme() {
+    	sum = a + b + b + c + d + e + f;
+    	cout << sum;
+    }
 };
 
 int main() {
